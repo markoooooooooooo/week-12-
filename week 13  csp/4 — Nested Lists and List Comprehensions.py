@@ -1,3 +1,36 @@
+list1 = [1, 2, 3]
+list2 = [4, 5, 6]
+nested_list = [list1, list2]
+print(nested_list)
+print(nested_list[1][2])
+
+fruits = ["apple", "orange", "banana", "coconut"] 
+vegetables = ["celery", "carrots", "potatoes"]
+meat = ["chicken", "fish", "turkey"] 
+
+
+groceries = [fruits, vegetables, meat]
+
+
+print(groceries[2][2])
+
+for collection in groceries:
+    for food in collection:
+        print(food, end=" ")
+print()
+
+
+num_pad = ((1, 2, 3),
+           (4, 5, 6),
+           (7, 8, 9),
+           ("*", 0, "#"))
+
+for row in num_pad:
+    for num in row:
+        print(num, end=" ")
+        print()
+
+
 # Objective:
 # Students will manipulate nested lists and understand basic list comprehensions.
 
@@ -25,6 +58,8 @@ matrix = [
 ]
 
 print(matrix[1][2])    # 6
+print(matrix[0][1])
+print(matrix[0][0])
 
 # List comprehension
 first_col = [row[0] for row in matrix]
@@ -36,10 +71,21 @@ print(first_col)       # [1, 4, 7]
 
 # Build a matrix variable containing 3 lists of 3 numbers each.
 
+matrix = [
+    [10, 20, 30],
+    [40, 50, 60],
+    [70, 80, 90]
+]
+
 # Print the first list.
+for row
+
 
 # Print the second item from the third list.
 
 # Use a list comprehension to extract the last item from each sub-list.
 
 # Challenge: Create a new list containing squares of numbers from 1–10 using a comprehension.
+squared_numbers = [x**2 for x in range(1,11)]
+
+print(squared_numbers)
